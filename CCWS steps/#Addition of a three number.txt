@@ -1,0 +1,10 @@
+#addition of a three number 
+Step 1:
+project>new>web service>name:Addition>package:server>finish
+
+Step 2:
+code>right click>add operation>name:multi>add>name:a>type:double>add>name:b>type:bouble>add>name:c>type:double>ok
+Step 3:
+return a+b+b>public Double
+Step 4:
+deploy>run test service

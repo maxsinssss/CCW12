@@ -1,0 +1,18 @@
+#Create a Calculator application using Simple SOAP service. Implement basic arithmetic operations viz. addition and subtraction.
+
+Step 1:
+project>new>web service>name:Addition & Subtraction >package:server>finish
+
+Step 2:
+code>right click>add operation>name:Add>add>name:a>type:double>add>name:b>type:bouble>ok
+
+return a+b>public Double
+
+Step 3:
+code>right click>add operation>name:sub>add>name:a>type:double>add>name:b>type:bouble:ok
+
+return a-b>public Double
+
+
+Step 5:
+deploy>run test service

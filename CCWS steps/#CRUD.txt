@@ -1,0 +1,25 @@
+#CRUD
+
+Step 1:
+services>java DB>start server>expand>sample>connect
+
+Step 2:
+jdbc:derby//localhost/sample>App>Table>create table> name: Student> add table> add given lable , name:id is compulsory >okay
+
+Step 3:
+create new project 
+
+Step 4:
+project>new>entity class>name:Student>package:com.stu>next>data source:jdbc/sample>finish
+
+Step 5:
+code>insert code> add property>name:stuname>.......
+
+Step 6:
+project>new> jsp page from entity classes>select>add>next>session package:com.stu.a>JSP package:com.stu.b>JSP Folder:c>next>finish
+
+Step 7:
+project>new>RESTful web service from entity classes>select>add>next>resource package:com.stu.service>finish
+
+Step 8:
+deploy>run

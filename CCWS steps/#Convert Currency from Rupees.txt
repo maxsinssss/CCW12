@@ -1,0 +1,28 @@
+#Convert Currency from Rupees 
+Step 1:Project > Rightclick > New > Web services > Give Name > Package : Server > Finish
+
+Step 2: code > Right Clcik > insert code > Add Web services operations > Operation name > Add it (Name : a, Type :Double)
+
+Step 3: in code remove null> put a/75 > String to Double convert
+
+Step 4: Right click on project > Deploy
+
+Step 5: Right click on web services > Test services
+
+Step 6: Click on WSDL file > Copy url 
+
+Step 7:Right click on project > New > web services client > put wsdl url > Package : Client >Finish
+
+Step 8:Right click on project> jsp > File name:Input > Finish
+
+Step 9:Right click on project> jsp > File name:Output > Finish
+
+
+Step 10: input file > <form action="output.jsp"><pre> 
+            Enter Rupees : <input type="text" name= "t1">
+<input type="submit">
+            </pre></form>
+
+Step 11: output file > web services references > open rbport1 > drag in code > output file > double a = Double.parseDouble(request.getParameter("t1"));
+
+Step 12: Deploy > input file > run

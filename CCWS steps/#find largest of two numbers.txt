@@ -1,0 +1,21 @@
+#find largest of two numbers
+Step 1:
+project>new>web service>name:Large>package:server>finish
+
+Step 2:
+code>right click>add operation>name:Large>add>name:a>type:double>add>name:b>type:bouble:ok
+Step 3:
+
+if (a != Math.floor(a) || b != Math.floor(b)) {
+    return "Error: Please enter valid integers.";
+}
+
+int num1 = (int) a;
+int num2 = (int) b;
+
+int largest = (num1 > num2) ? num1 : num2;
+
+return "The largest number is " + largest;
+
+Step 4:
+deploy>run test service

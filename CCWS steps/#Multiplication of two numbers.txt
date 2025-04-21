@@ -1,0 +1,11 @@
+#Multiplication of two numbers 
+
+Step 1:
+project>new>web service>name:Multiplication>package:server>finish
+
+Step 2:
+code>right click>add operation>name:multi>add>name:a>type:double>add>name:b>type:bouble:ok
+Step 3:
+return a*b>publick Double
+Step 4:
+deploy>run test service

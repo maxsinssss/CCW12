@@ -1,0 +1,48 @@
+# identify whether number is prime or not.
+
+Step 1:
+project>new>web service> name: fact > package:server
+Step 2:
+code>right click>insert code>service operation>name:factorial>add>name:a>type:double>
+
+if (a < 2 || a != Math.floor(a)) {
+    return "Error: Please enter an integer greater than 1.";
+}
+
+int number = (int) a;
+boolean isPrime = true;
+
+for (int i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i == 0) {
+        isPrime = false;
+        break;
+    }
+}
+
+if (isPrime) {
+    return number + " is a prime number.";
+} else {
+    return number + " is not a prime number.";
+}
+
+
+Step 3:
+deploy>test Web service>wsdl file>copy Url
+
+Step 4:
+Right click on project > New > web services client > put wsdl url > Package : Client >Finish
+
+Step 5:
+project > new> jsp>name:input; project>new>output
+
+Step 6:
+input> 
+<form action="output.jsp"><pre> 
+            Enter prime Number : <input type="text" name= "t1">
+<input type="submit">
+            </pre></form>
+Step 7:
+output>web service reference > end drag and drop> double a = Double.parseDouble(request.getParameter("t1"));
+
+Step 8:
+deploy>input file>run
